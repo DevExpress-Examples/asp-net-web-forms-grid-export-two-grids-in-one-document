@@ -1,8 +1,8 @@
-﻿Imports System
+﻿Imports DevExpress.XtraPrinting
+Imports DevExpress.XtraPrintingLinks
+Imports System
 Imports System.IO
 Imports System.Web.UI
-Imports DevExpress.XtraPrinting
-Imports DevExpress.XtraPrintingLinks
 
 Partial Public Class _Default
     Inherits System.Web.UI.Page
@@ -11,20 +11,20 @@ Partial Public Class _Default
 
     End Sub
     Protected Sub ExportButton_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Dim ps As New PrintingSystem()
+        Dim ps As New PrintingSystemBase()
 
-        Dim link1 As New PrintableComponentLink(ps)
+        Dim link1 As New PrintableComponentLinkBase(ps)
         link1.Component = GridExporter1
 
-        Dim link2 As New PrintableComponentLink(ps)
+        Dim link2 As New PrintableComponentLinkBase(ps)
         link2.Component = GridExporter2
 
-        Dim compositeLink As New CompositeLink(ps)
+        Dim compositeLink As New CompositeLinkBase(ps)
         compositeLink.Links.AddRange(New Object() { link1, link2 })
 
         compositeLink.CreateDocument()
         Using stream As New MemoryStream()
-            compositeLink.PrintingSystem.ExportToXls(stream)
+            compositeLink.ExportToXls(stream)
             WriteToResponse("filename", True, "xls", stream)
         End Using
         ps.Dispose()
