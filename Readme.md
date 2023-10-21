@@ -16,7 +16,7 @@
 
 
 
-### Steps to implement (v11.1 and newer):
+### Steps to implement
 This example shows how to export several ASPxGridView to one XLS document. The scenario is implemented with the **DevExpress Printing.Core** library.
 
 1. Add several ASPxGridViews to a page.
@@ -49,14 +49,10 @@ This example shows how to export several ASPxGridView to one XLS document. The s
 
 6. Export the CompositeLinkBase component by using the [ExportTo[FORMAT]](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrintingLinks.CompositeLinkBase.Class.methods) method.
 
-
-### For old versions (below v11.1)
-You can combine several reports in one by embedding a number of GridViewLinks (see DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink) using the *CompositeLink* component.
-  
 ### See Also:
   
-### MVC Version: [How to export multiple GridViews into a single print document](https://www.devexpress.com/Support/Center/p/E3891)
-[How to export several controls to different XLSX worksheets](https://www.devexpress.com/Support/Center/p/E3626)
-[How to export the ASPxGridView and WebChartControl to the same print document](https://www.devexpress.com/Support/Center/p/E2226)
+* MVC Version: [How to export multiple GridViews into a single print document](https://www.devexpress.com/Support/Center/p/E3891)
+* [How to export several controls to different XLSX worksheets](https://www.devexpress.com/Support/Center/p/E3626)
+* [How to export the ASPxGridView and WebChartControl to the same print document](https://www.devexpress.com/Support/Center/p/E2226)
 
 
