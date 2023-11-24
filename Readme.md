@@ -50,6 +50,6 @@ using(MemoryStream stream = new MemoryStream()) {
 
 ## More Examples
 
-* [Grid View for MVC - How to export multiple grids into a single print document](https://github.com/DevExpress-Examples/asp-net-mvc-grid-export-multiple-gridviews-into-a-document)
-* [Web Forms - How to export several controls to different XLSX worksheets](https://github.com/DevExpress-Examples/asp-net-web-forms-export-several-controls-to-different-sheets)
-* [How to export the ASPxGridView and WebChartControl to the same print document](https://github.com/DevExpress-Examples/how-to-export-the-aspxgridview-and-webchartcontrol-to-the-same-print-document-e2226)
+* [How to export several controls to different XLSX worksheets](https://github.com/DevExpress-Examples/asp-net-web-forms-export-several-controls-to-different-sheets)
+* [How to export ASPxPivotGrid and bound WebChartControl to the same print document](https://github.com/DevExpress-Examples/asp-net-web-forms-export-pivot-grid-and-chart-in-one-document)
+* [How to export ASPxGridView and WebChartControl to the same print document](https://github.com/DevExpress-Examples/asp-net-web-forms-export-grid-and-chart-in-one-document)
